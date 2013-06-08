@@ -1,0 +1,91 @@
+/* CSS Document */
+ul, li{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+}
+body{
+    height: 1000px;
+    width: 800px;
+	line-height:1.5;
+	font-size:62.5%;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+ul{
+	list-style:none;
+}
+#wrapper{
+	width:800px;
+	margin:0 auto;
+}
+#header{
+	width:800px;
+	height:150px;
+	background:#0066CC;
+}
+#mainNav{
+	width:190px;
+        height: 750px;
+	float:left;
+	background:#FF9933;
+}
+mainNav ul li {
+    width: 190px;
+    height: 500px;
+    float: left;
+}
+#content{
+	width:600px;
+        height: 750px;
+	background:#FF9966;
+	float:right;
+}
+#footer{
+	width:800px;
+	clear:both;
+	height:60px;
+	background:#0066CC;
+}
+<!---->
+#navMenu {
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    height: 50px;
+}
+#navMenu ul {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+#navMenu li{
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+    float: left;
+    position: relative;
+    background: #999;
+}
+#navMenu ul li a {
+    text-align: center;
+    font-family: "Comic Sans MS",cursive;
+    text-decoration: none;
+    height: 30px;
+    width: 150px;
+    display:block; 
+    color: #FFF;
+    border: 1px solid #000;
+        
+}
+#navMenu ul ul {
+    position: absolute;
+    visibility: hidden;
+    top:30px;
+}
+#navMenu ul li:hover ul {
+    visibility: visible;
+}
+<!---->

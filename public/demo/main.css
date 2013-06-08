@@ -1,0 +1,68 @@
+#wapper{
+    width: 911px;
+    margin: 0 auto;
+}
+#header {
+    width: 911px;
+    height: 150px;
+}
+<!--thanh menu cac trang thai lua chon-->
+#navMenu {
+    margin: 0;
+    padding: 0;
+    width: 900px;
+    height: 50px;
+}
+#navMenu ul {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+#navMenu li{
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+    float: left;
+    position: relative;
+    background: #999;
+}
+#navMenu ul li a {
+    text-align: center;
+    font-family: "Comic Sans MS",cursive;
+    text-decoration: none;
+    height: 30px;
+    width: 150px;
+    display:block; 
+    color: #FFF;
+    border: 1px solid #000;
+        
+}
+#navMenu ul ul {
+    position: absolute;
+    visibility: hidden;
+    top:30px;
+}
+#navMenu ul li:hover ul {
+    visibility: visible;
+}
+<!--            End    header     -->
+
+<!--Khung giua-->
+#main {
+    width: 911px;
+    height: 150px;
+}
+#lefMain {
+    width: 180px;
+    float: left;
+    background: activeborder;
+}
+<!--        End  main    -->
+
+<!--footer-->
+#footer {
+    width: 911px;
+    height: 100px;
+   background: #FFF;
+}
+<!--        End footer     -->

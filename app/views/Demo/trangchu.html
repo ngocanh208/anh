@@ -1,0 +1,53 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <!--  Bootstrap -->
+         <link rel="stylesheet" media="screen" href="/public/bootstrap/css/bootstrap.min.css" />
+        <script src="/public/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <!--       CSS        ---->
+        <link rel="stylesheet/less" type="text/css" href="/public/style.css"> 
+        
+    </head>
+    <body>
+        <div id="main"> 
+        <!----                Header          ----->
+        <div id="head"> 
+        <h1 align="center"> Cong thong tin dao tao DH QGHN</h1>
+        <img src="\public\demo\images\header.PNG" height="150" width="1000">
+        </div>
+        <!-----           main      ----->
+        <div id="khung">
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label" for= "inputUserName"> User Name: </label>
+                <div class="controls">
+                    <input type="text" name="userName" id="userName">
+                </div>
+             </div>
+            
+            <div class="form-horizontal">
+                <div class="control-group">
+                    <label class="control-label" for="inputPassword"> Password: </label>
+                    <div class="controls">
+                        <input type="password" name="password" id="password">
+                    </div>
+                </div>
+             </div>
+            <div class="form-horizontal">
+             <div class="control-group">
+                 <button type="submit" class="btn">Sing in</button>
+             </div>
+            </div>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>

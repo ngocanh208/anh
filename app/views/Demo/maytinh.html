@@ -1,0 +1,91 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <script language="javascript">
+	function display(character)
+	{
+		if (document.form.textfield.value == null || document.form.textfield.value==0)
+			document.form.textfield.value =character;
+		else 
+			document.form.textfield.value = document.form.textfield.value + character;
+	}
+	function compute() 
+	{
+		document.form.textfield.value = eval(document.form.textfield.value);
+	}
+	function checkNum(str) 
+	{
+		for (var i = 0; i < str.length; i++) 
+		{
+			var ch = str.substring(i, i+1)
+			if (ch < "0" || ch > "9") 
+			{
+				if (ch != "/" && ch != "*" && ch != "+" && ch !="-" && ch != "." && ch != "(" && ch!= ")") 
+				{
+					alert("invalid entry!");
+					return false;
+				}
+			}
+		}
+	}
+	function xoa()
+	{
+		document.form.textfield.value = null;
+	}
+	function C()
+	{
+		document.form.textfield.value = (document.form.textfield.value).substr(0,document.form.textfield.value.length - 1);
+	}
+</script>
+    <body>
+        <div>TODO write content</div>
+        <body>
+<form name="form">
+<table width="432" height="52" border="1" align="center" bordercolor="#CCCCCC">
+  <tr>
+    <td align="center"><input name="textfield" type="text" id="textfield" size="40" /></td>
+  </tr>
+  <tr>
+    <td align="center"><table width="313" border="0">
+      <tr>
+        <td width="56" align="center"><input type="button" name="button" id="button" value="9" onclick="display('9');"/></td>
+        <td width="58" align="center"><input type="button" name="button2" id="button2" value="8" onclick="display('8');"/></td>
+        <td width="71" align="center"> <input type="button" name="button3" id="button3" value="7" onclick="display('7');"/></td>
+        <td width="37" align="center"><input type="button" name="button4" id="button4" value="+" onclick="display('+');"/></td>
+        <td width="69" align="center"><input type="button" name="button5" id="button5" value="C" onclick="C();"/></td>
+      </tr>
+      <tr>
+        <td align="center"><input type="button" name="button6" id="button6" value="6" onclick="display('6');"/></td>
+        <td align="center"><input type="button" name="button7" id="button7" value="5" onclick="display('5');"/></td>
+        <td align="center"><input type="button" name="button8" id="button8" value="4" onclick="display('4');"/></td>
+        <td align="center"><input type="button" name="button9" id="button9" value="-" onclick="display('-');"/></td>
+        <td align="center"><input type="button" name="button10" id="button10" value="Xóa" onclick="delete(textfield);"/></td>
+      </tr>
+      <tr>
+        <td align="center"><input type="button" name="button11" id="button11" value="3" onclick="display('3');"/></td>
+        <td align="center"><input type="button" name="button12" id="button12" value="2" onclick="display('2');"/></td>
+        <td align="center"><input type="button" name="button13" id="button13" value="1" onclick="display('1');"/></td>
+        <td align="center"><input type="button" name="button14" id="button14" value="*" onclick="display('*');"/></td>
+        <td rowspan="2" align="center"><input type="button" name="button15" id="button15" value="=" style="height:50px;width:50px" onclick="compute();"/></td>
+      </tr>
+      <tr>
+        <td align="center"><input type="button" name="button16" id="button16" value="-/+" /></td>
+        <td align="center"><input type="button" name="button17" id="button17" value="0" onclick="display('0');"/></td>
+        <td align="center"><input type="button" name="button18" id="button18" value="." onclick="display('.');"/></td>
+        <td align="center"><input type="button" name="button19" id="button19" value="/" onclick="display('/');"/></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</form>
+</body>
+
+    </body>
+</html>

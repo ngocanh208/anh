@@ -1,0 +1,216 @@
+
+/*............. Layout..............*/
+body{
+    font-family: Arial, Tahoma;
+    font-size: 12px;
+}
+ 
+#main{
+    width: 1000px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#head{
+    height: 150px;
+    background-color: #F5F5F5;
+    background: url("\public\deme\images\header.PNG");
+    border: 1px solid #CDCDCD;
+    margin-bottom:5px;
+}
+
+#head-link{
+     height: 50px;
+     line-height: 30px;
+     padding-left: 10px;
+     padding-right: 10px;
+     border: 1px solid appworkspace;
+     background-color: #F5F5F5;
+     margin-bottom:5px;
+     clear: both;
+}
+#left{
+     width: 250px;
+     min-height: 500px;
+     border: 1px solid #CDCDCD;
+     float:left;
+     background-color: buttonface;
+     margin-bottom: 5px;
+     margin-top: 5px;
+}
+#content{
+     width: 735px;
+     border: 0px;
+     min-height: 500px;
+     border: 1px solid #CDCDCD;
+     float:left;
+     margin-left: 5px;
+     margin-right: 5px;
+     margin-bottom: 5px;
+     margin-top: 5px;
+}
+#right{
+     width: 234px;
+     min-height: 500px;
+     border: 1px solid #CDCDCD;
+     float:right;
+     margin-bottom: 5px;
+}
+#footer{
+     height: 80px;
+     clear: both;
+     border: 1px solid #CDCDCD;
+     background-color: #F8F8FF;
+}
+/*............. End Layout ........*/
+
+/* .......... login.........*/
+#khung {
+    width: 950px;
+    min-height: 500px;
+    border: 1px solid appworkspace;
+    alignment-adjust: central;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+/*........... End Login ....*/
+
+.header {
+    width: 960px;
+    height: 200px;
+    background: url(/public/demo/images/a1.jpg);
+}
+
+/* contentsArea
+============================================================*/
+#contentsArea {
+  padding-bottom: 120px;
+}
+/* Thay đổi mật khẩu
+=============================================================*/
+#body {
+    border: 1px;
+    align: center;
+}
+/*thông tin cá nhân
+=====================================*/
+
+#wrap {
+  position: relative;
+  min-height: 100%;
+  min-width: 1000px;
+}
+#wrap #headerArea .areaInner,
+#wrap #contentsArea,
+#wrap #footerArea .areaInner {
+  position: relative;
+  width: 950px;
+  margin: 0 auto;
+}
+
+/* contentsArea
+============================================================*/
+#contentsArea {
+  padding-bottom: 120px;
+}
+
+/* contentsLayout
+--------------------------------------------------------*/
+.contentsLayout-2c_left .mainColumn {
+  float: left;
+  width: 670px;
+}
+.contentsLayout-2c_left .subColumn {
+  float: right;
+  width: 230px;
+}
+
+.contentsLayout-2c_user .mainColumn {
+  float: right;
+  width: 630px;
+}
+.contentsLayout-2c_user .subColumn {
+  float: left;
+  width: 270px;
+}
+
+.contentsLayout-2c_half .mainColumn {
+  float: right;
+  width: 430px;
+}
+.contentsLayout-2c_half .subColumn {
+  float: left;
+  width: 430px;
+}
+
+/* header-lineBase
+- - - - - - - - - - - - - - - - - - - - - - - - - - */
+.header-lineBase, .header-lineBase2, .header-catImgline, .header-lineBase3 {
+  display: table;
+  width: 100%;
+  padding-bottom: 0.2em;
+  margin: 0 0 15px;
+  border-bottom: 3px solid #d9d9d9;
+  color: #666;
+}
+.header-lineBase .title, .header-lineBase2 .title, .header-catImgline .title, .header-lineBase3 .title {
+  display: table-cell;
+  vertical-align: bottom;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.header-lineBase .sub, .header-lineBase2 .sub, .header-catImgline .sub, .header-lineBase3 .sub {
+  display: table-cell;
+  vertical-align: bottom;
+  text-align: right;
+  font-weight: normal;
+}
+.header-lineBase .stepList, .header-lineBase2 .stepList, .header-catImgline .stepList, .header-lineBase3 .stepList {
+  color: #999999;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+.header-lineBase .stepList li, .header-lineBase2 .stepList li, .header-catImgline .stepList li, .header-lineBase3 .stepList li {
+  display: inline-block;
+}
+.header-lineBase .stepList li.current, .header-lineBase2 .stepList li.current, .header-catImgline .stepList li.current, .header-lineBase3 .stepList li.current {
+  color: #d83886;
+  font-weight: bold;
+}
+.header-lineBase .stepList li:after, .header-lineBase2 .stepList li:after, .header-catImgline .stepList li:after, .header-lineBase3 .stepList li:after {
+  display: inline-block;
+  margin: 0 10px;
+  content: "/";
+  color: #666;
+}
+.header-lineBase .stepList li:last-child:after, .header-lineBase2 .stepList li:last-child:after, .header-catImgline .stepList li:last-child:after, .header-lineBase3 .stepList li:last-child:after {
+  display: none;
+}
+
+/* header-lineBase2
+- - - - - - - - - - - - - - - - - - - - - - - - - - */
+.header-lineBase2, .header-catImgline {
+  padding-bottom: 0.5em;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* header-lineBase3
+- - - - - - - - - - - - - - - - - - - - - - - - - - */
+.header-lineBase3 {
+  padding-bottom: 0.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px dotted #d9d9d9;
+  color: #333;
+}
+.header-lineBase3 .title {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+

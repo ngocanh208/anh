@@ -1,0 +1,50 @@
+/* CSS Layout Bootstrap */
+body,html,.container-fluid {
+    height: 100%;
+}
+.article-tree {
+    color: blueviolet;
+    background: activeborder;
+}
+.content-area {
+    overflow: auto;
+    height: 100%;
+}
+.columns {
+    height: 100%;
+    margin-top: 42px;
+    margin-bottom: 20px;
+}
+.footer {
+    height: 20px;
+    background: aqua;
+}
+
+html, body {, body {
+    height: 100%;: 100%;
+}}
+.container-fluid {.container-fluid {
+    margin: 0 auto;: 0 auto;
+    height: 100%;: 100%;
+    padding: 20px 0;: 20px 0;
+
+    -moz-box-sizing: border-box;-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;-webkit-box-sizing: border-box;
+    box-sizing: border-box;-sizing: border-box;
+}}
+
+.columns {.columns {
+    background-color: #C9E6FF;-color: #C9E6FF;
+    height: 100%;   : 100%;   
+}}
+
+.content-area, .article-tree{.content-area, .article-tree{
+    background: #bada55;: #bada55;
+    overflow:auto;:auto;
+    height: 100%;: 100%;
+}}
+
+.footer {.footer {
+    background: red;: red;
+    height: 20px;: 20px;
+}}

@@ -1,0 +1,36 @@
+#navMenu {
+    margin: 0;
+    padding: 0;
+}
+#navMenu ul {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+#navMenu li{
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+    float: left;
+    position: relative;
+    background: #999;
+}
+#navMenu ul li a {
+    text-align: center;
+    font-family: "Comic Sans MS",cursive;
+    text-decoration: none;
+    height: 30px;
+    width: 150px;
+    display:block; 
+    color: #FFF;
+    border: 1px solid #000;
+        
+}
+#navMenu ul ul {
+    position: absolute;
+    visibility: hidden;
+    top:30px;
+}
+#navMenu ul li:hover ul {
+    visibility: visible;
+}
